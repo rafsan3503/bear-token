@@ -6,16 +6,20 @@
 }
 
 @media only screen and (max-width: 478px) {
-    .main-container{
-        background-image: url(images/bearcubcartoonofficallogo.jpg);
+    header{
+        background-image: url(images/background.jpg);
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position: center;
+    }
+    main, footer{
+        background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     }
 }
 
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) {
     .main-container {
         background-attachment: scroll;
     }
-}
+} */
