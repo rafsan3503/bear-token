@@ -13,3 +13,9 @@
         background-position: center;
     }
 }
+
+@supports (-webkit-touch-callout: none) {
+    .main-container {
+        background-attachment: scroll;
+    }
+}
