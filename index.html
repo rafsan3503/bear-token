@@ -10,37 +10,49 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/22f7957471.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-image: url(images/background1.jpg);" class="bg-fixed bg-cover">
+<body>
     <header>
-    <div class="hero min-h-screen">
+    <div class="w-full backdrop-blur-xl text-white rounded-box fixed">
+        <div class="px-2 hidden">
+            <a class="text-lg font-bold"><img src="images/logo.png" class="w-1/2" alt=""></a>
+        </div>
+        <div class="flex flex-1 justify-center">
+            <div class="flex flex-wrap">
+                <div><a href="#overview" class="btn btn-ghost rounded-btn font-thin hover:bg-violet-500">Overview</a></div>
+                <div>
+                    <a href="#utility" class="btn btn-ghost rounded-btn font-thin hover:bg-violet-500">Utility</a>
+                </div>
+                <div>
+                    <a href="#roadmap" class="btn btn-ghost rounded-btn font-thin hover:bg-violet-500">Roadmap</a>
+                </div>
+                <div>
+                    <a href="#our-team" class="btn btn-ghost rounded-btn font-thin hover:bg-violet-500">Our Team</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="hero min-h-screen pt-10">
         <div class="hero-overlay bg-opacity-20"></div>
         <div class="text-center text-neutral-content">
             <div class="max-w-md flex flex-col justify-evenly">
                 <h1 class="mb-2 text-5xl font-bold text-violet-500">The Bear Token</h1>
                 <p class="mb-5">Beat The Market</p>
-                <ul class="menu menu-horizontal bg-black rounded-box text-center fixed top-0">
-                    <li class="hover-bordered"><a href="#overview">Overview</a></li>
-                    
-                    <li class="hover-bordered"><a href="#utility">Utility</a></li>
-
-                    <li class="hover-bordered"><a href="#roadmap">Roadmap</a></li>
-
-                    <li class="hover-bordered">
-                        <a href="#our-team">Our Team</a></li>
-                    
-                </ul>
+                <img class="w-1/2 mx-auto" src="images/main-logo.png" alt="">
+                <button class="btn btn-outline btn-primary w-9/12 my-5 mx-auto">Buy Now on pancakeSwap</button>
                 
             </div>
         </div>
     </div>
     </header>
     <main>
-        <section id="overview" class="min-h-screen bg-cover text-center">
+        <section id="overview" class="min-h-screen bg-cover text-center py-10 mt-28">
             <section class="w-9/12 mx-auto">
                 <h1 class="pt-10 text-3xl font-bold text-violet-500">Overview</h1>
-                <p class="mt-5 text-lg text-justify text-orange-300">Welcome to the Bear Token community. Investing in crypto is both exciting and rewarding. However, the recent market
+                <p class="mt-5 text-lg text-justify text-orange-500 backdrop-blur-sm p-5 shadow-lg border-2 border-violet-500 rounded-lg">Welcome to the Bear Token community. Investing in crypto is both exciting and rewarding. However, the recent market
                     slump has resulted in huge losses, forcing investors to reconsider their investment strategies. The Bear Token team
                     wants to take rewards tokens in a new direction—a smarter direction.
                 
@@ -58,9 +70,9 @@
                     amongst all Bear Token holders.
                 </p>
             </section>
-            <section class="w-9/12 mx-auto py-10">
+            <section class="w-9/12 mx-auto py-10 mt-14">
                 <h1 class="pt-10 text-3xl font-bold text-violet-500">Tokenomics</h1>
-                <p class="mt-5 text-lg text-justify text-orange-300">The Bear Token uses a taxation system to fund the treasury and maintain a healthy liquidity pool. In addition, there is
+                <p class="mt-5 text-lg text-justify text-orange-500 backdrop-blur-sm p-8 border-2 border-violet-500 rounded-lg">The Bear Token uses a taxation system to fund the treasury and maintain a healthy liquidity pool. In addition, there is
                 a burn on every sell.
                 
                 
@@ -75,62 +87,62 @@
                 </div>
             </section>
         </section>
-        <section id="utility" class="min-h-screen bg-cover text-center bg-fixed ">
+        <section id="utility" class="min-h-screen bg-cover text-center py-10 mt-14">
             <h1 class="py-10 text-3xl font-bold text-violet-500">Utility</h1>
-            <div class="grid lg:grid-cols-2 lg:divide-x-2  gap-5 w-9/12 mx-auto">
-                <div class=" bg-transparent shadow-xl">
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 lg:divide-x-2  gap-5 w-9/12 mx-auto">
+                <div class=" bg-transparent shadow-xl backdrop-blur-sm border-2 border-violet-500 rounded-lg">
                     <div class="card-body">
                         <h1 class="text-xl font-medium text-violet-500">Sustainable Token Value</h1>
-                        <p class="mt-5 text-lg text-justify text-orange-300">The Bear Token economy is built around a locked treasury. This means, investors have a reason to hold. If you sell your
+                        <p class="mt-5 text-lg text-justify text-orange-500">The Bear Token economy is built around a locked treasury. This means, investors have a reason to hold. If you sell your
                         tokens, you are giving up your share of the treasury when it is unlocked. As the treasury grows, the demand for token
                         will increase—driving up the token price. This system will ensure that the price of the token continues to increase
                         until the treasury finally unlocks and rewards are distributed.</p>
                     </div>
                 </div>
-                <div class="bg-transparent shadow-xl">
+                <div class="bg-transparent shadow-xl backdrop-blur-sm border-2 border-violet-500 rounded-lg">
                     <div class="card-body">
                         <h1 class="text-xl font-medium text-violet-500">Building the Treasury</h1>
-                        <p class="mt-5 text-lg text-justify text-orange-300">The treasury will be built through the 4% tax on all buys and sells. As the amount of funds grow, the treasury will make
+                        <p class="mt-5 text-lg text-justify text-orange-500">The treasury will be built through the 4% tax on all buys and sells. As the amount of funds grow, the treasury will make
                         investments in crypto tokens across multiple chains. Members of the Bear Token community will be given opportunity to
                         vote on which currencies to spend the treasury on. The intent is to purchase tokens as they hit the market floor. As
                         this is impossible to predict, the treasury will be spent using a DCA (Dollar Cost Average) approach, to ensure the best
                         possible value for the treasury.</p>
                     </div>
                 </div>
-                <div class="bg-transparent shadow-xl">
+                <div class="bg-transparent shadow-xl backdrop-blur-sm border-2 border-violet-500 rounded-lg">
                     <div class="card-body">
                         <h1 class="text-xl font-medium text-violet-500">Hibernation</h1>
-                        <p class="mt-5 text-lg text-justify text-orange-300">After multiple rounds of investments have been made, the treasury will go into hibernation for the remainder of crypto
+                        <p class="mt-5 text-lg text-justify text-orange-500">After multiple rounds of investments have been made, the treasury will go into hibernation for the remainder of crypto
                         winter. The 4% tax will continue to be deposited in the treasury, but no further investments will be made into other
                         tokens. As crypto winter nears its end, there will be a Groundhog Day event, where the community collectively assesses
                         the market and votes on the date to unlock the treasury.</p>
                     </div>
                 </div>
-                <div class="bg-transparent shadow-xl">
+                <div class="bg-transparent shadow-xl backdrop-blur-sm border-2 border-violet-500 rounded-lg">
                     <div class="card-body">
                         <h1 class="text-xl font-medium text-violet-500">Unlocking the Treasury</h1>
-                        <p class="mt-5 text-lg text-justify text-orange-300">On the day the community decides, all investments made by the treasury will be converted to BUSD and distributed evenly
+                        <p class="mt-5 text-lg text-justify text-orange-500">On the day the community decides, all investments made by the treasury will be converted to BUSD and distributed evenly
                         amongst all Bear Token holders.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section id="roadmap">
-            <div class="w-1/2 mx-auto py-10">
+            <div class="py-10 mt-28">
                     <h1 class="py-10 text-4xl font-bold text-violet-500 text-center">Roadmap</h1>
                     <img class="w-full block" src="images/roadmap.png" alt="">
                 
             </div>
         </section>
-        <section id="our-team" class="min-h-screen bg-cover bg-fixed text-center py-10">
+        <section id="our-team" class="min-h-screen bg-cover bg-fixed text-center py-10 mt-28">
             <h1 class="py-10 text-3xl font-bold text-violet-500">Bear Token Team</h1>
-            <div class="grid lg:grid-cols-3 gap-5 w-9/12 mx-auto">
-                <div class="card bg-transparent shadow-2xl border">
-                    <figure><img class="w-1/2 rounded-full pt-4" src="images/jp.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="text-violet-500 text-3xl font-bold text-center text-bold">Jp Ivey</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 w-9/12 mx-auto">
+                <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
+                    <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/jp.jpg" alt="Shoes" /></figure>
+                    <div class="card-body text-left">
+                        <h2 class="text-violet-500 text-3xl font-bold text-bold">Jp Ivey</h2>
                         <p class="text-white font-medium">Project Lead</p>
-                        <p class="mt-5 text-lg text-justify text-orange-300">Technical Project Manager for software development. I have a Masters in Management, multiple Agile certifications, and
+                        <p class="mt-5 text-lg text-left text-orange-500">Technical Project Manager for software development. I have a Masters in Management, multiple Agile certifications, and
                         experience in a wide variety of fields (restaurants, manufacturing, military applications, and software). I have been
                         involved in multiple crypto projects, both as an analyst and investor.</p>
                         <div class="card-actions">
@@ -138,12 +150,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-transparent shadow-2xl border">
-                    <figure><img class="w-1/2 rounded-full pt-4" src="images/vadim.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="text-violet-500 text-3xl font-bold text-center text-bold">Vadim Race</h2>
+                <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
+                    <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/vadim.jpg" alt="Shoes" /></figure>
+                    <div class="card-body text-left">
+                        <h2 class="text-violet-500 text-3xl font-bold text-bold">Vadim Race</h2>
                         <p class="text-white font-medium">Lead developer</p>
-                        <p class="mt-5 text-lg text-justify text-orange-300">Smart contract and Front end web3 developer for CryptoCraversLLC. I have experience in working with NI LabView, MatLab,
+                        <p class="mt-5 text-lg text-orange-500">Smart contract and Front end web3 developer for CryptoCraversLLC. I have experience in working with NI LabView, MatLab,
                         Solidity, Java, Python, C++, Objective C, NI Multisim and Java Script. I am also a Program Manager for US Acquisitions
                         Programs involving data analytics, electronic warfare applications and signal analysis.</p>
                         <div class="card-actions">
@@ -151,12 +163,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-transparent shadow-2xl border">
-                    <figure><img class="w-1/2 rounded-full pt-4" src="images/nice-houle.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="text-violet-500 text-3xl font-bold text-center text-bold">Nicholas Houle</h2>
+                <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
+                    <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/nice-houle.jpg" alt="Shoes" /></figure>
+                    <div class="card-body text-left">
+                        <h2 class="text-violet-500 text-3xl font-bold text-bold">Nicholas Houle</h2>
                         <p class="text-white font-medium">Graphics Designer</p>
-                        <p class="mt-5 text-lg text-justify text-orange-300">I've been working with and interested in Cryptocurrencies since 2012 where I would keep my computer on all night hosting
+                        <p class="mt-5 text-lg text-orange-500">I've been working with and interested in Cryptocurrencies since 2012 where I would keep my computer on all night hosting
                         a Bitcoin mining software. Unfortunately, like many stories like mine, I lost access to the wallet containing my
                         Bitcoin. I have experience in smart contract development and crypto investing, but love my full-time role as a graphic
                         artist.</p>
@@ -165,12 +177,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-transparent shadow-2xl border">
-                    <figure><img class="w-1/2 rounded-full pt-4" src="images/nice-race.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="text-violet-500 text-3xl font-bold text-center text-bold">Nicholas Race</h2>
+                <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
+                    <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/nice-race.jpg" alt="Shoes" /></figure>
+                    <div class="card-body text-left">
+                        <h2 class="text-violet-500 text-3xl font-bold text-bold">Nicholas Race</h2>
                         <p class="text-white font-medium">Community Manager</p>
-                        <p class="mt-5 text-lg text-justify text-orange-300">I currently am a student enrolled in Embry Riddle University, pursuing a Bachelors of Maintenance Management. I have
+                        <p class="mt-5 text-lg text-orange-500">I currently am a student enrolled in Embry Riddle University, pursuing a Bachelors of Maintenance Management. I have
                         experience in crypto market dynamics, trends, and social media movements. With my vested skills in management, public
                         relations, and observation, I am able to cast a wide net over specific content and deliver results.</p>
                         <div class="card-actions">
@@ -178,24 +190,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-transparent shadow-2xl border">
-                    <figure><img class="w-1/2 rounded-full pt-4" src="images/mahmud.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="text-violet-500 text-3xl font-bold text-center text-bold">Mahmud Hasan</h2>
+                <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
+                    <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/mahmud.jpg" alt="Shoes" /></figure>
+                    <div class="card-body text-left">
+                        <h2 class="text-violet-500 text-3xl font-bold text-bold">Mahmud Hasan</h2>
                         <p class="text-white font-medium">Web Developer</p>
-                        <p class="mt-5 text-lg text-justify text-orange-300">I have been active in the crypto space for the past few years,. This is my first time filling the role of web dev for a
+                        <p class="mt-5 text-lg text-orange-500">I have been active in the crypto space for the past few years,. This is my first time filling the role of web dev for a
                         crypto project. I also look forward to being involved community development.</p>
                         <div class="card-actions">
                             <i class="fa-brands fa-linkedin text-3xl text-violet-500"></i>
                         </div>
                     </div>
                 </div>
-                <div class="card bg-transparent shadow-2xl border">
-                    <figure><img class="w-1/2 rounded-full pt-4" src="images/chase.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="text-violet-500 text-3xl font-bold text-center text-bold">Chase Franz</h2>
+                <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
+                    <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/chase.jpg" alt="Shoes" /></figure>
+                    <div class="card-body text-left">
+                        <h2 class="text-violet-500 text-3xl font-bold text-bold">Chase Franz</h2>
                         <p class="text-white font-medium">Marketing</p>
-                        <p class="mt-5 text-lg text-justify text-orange-300">I have worked in cryptocurrency for five years, beginning in mining. My main skill set lies in social media marketing
+                        <p class="mt-5 text-lg text-orange-500">I have worked in cryptocurrency for five years, beginning in mining. My main skill set lies in social media marketing
                         which I have operated my business for three years. Within the last six months, I have developed a large network within
                         crypto and continue to hone my marketing abilities in this space.</p>
                         <div class="card-actions">
