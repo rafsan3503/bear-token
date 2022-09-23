@@ -16,13 +16,17 @@
 <body class="hero-overlay bg-opacity-40">
     <section class="main-container">
         <header>
-            <div class="w-full h-16 backdrop-blur-xl text-white flex items-center rounded-box fixed">
+            <div class="w-full h-16 backdrop-blur-xl text-white flex items-center rounded-box fixed top-0">
                 <div class="px-2 hidden">
                     <a class="text-lg font-bold"><img src="images/logo.png" class="w-1/2" alt=""></a>
                 </div>
                 <div class="flex flex-1 justify-center ">
                     <div class="flex flex-wrap">
-                        <div><a href="#overview" class="btn btn-ghost rounded-btn font-bold text-violet-700 hover:bg-violet-500 hover:text-white">Overview</a>
+                        <div>
+                            <a href="#home" class="btn btn-ghost rounded-btn font-bold text-violet-700 hover:bg-violet-500 hover:text-white">Home</a>
+                        </div>
+                        <div>
+                            <a href="#overview" class="btn btn-ghost rounded-btn font-bold text-violet-700 hover:bg-violet-500 hover:text-white">Overview</a>
                         </div>
                         <div>
                             <a href="#utility" class="btn btn-ghost rounded-btn font-bold text-violet-700 hover:bg-violet-500 hover:text-white">Utility</a>
@@ -37,15 +41,19 @@
                     </div>
                 </div>
             </div>
-            <div class="hero min-h-screen">
-                <div class=""></div>
-                <div class="text-center text-neutral-content">
-                    <div class="max-w-md flex flex-col justify-evenly mt-20">
-                        <h1 class="mb-2 text-5xl font-bold text-violet-700">The Bear Token</h1>
-                        <p class="mb-5 text-justify">The Bear Token ($BEAR) is a Binance Smart Chain rewards token designed to grow your money through the Crypto slump. <br> Our unique treasury wallet will "Buy the Dip" to optimize maximum growth during the bear market.</p>
-                        <img class="w-11/12 mx-auto" src="images/main-logo.png" alt="">
-                        <p class="my-4 text-2xl font-bold text-violet-700">Beat the Market</p>
+            <div id="home" class="min-h-screen">
+                <div class="">
+                    <h1 class="mb-5 text-5xl lg:text-[72px] font-bold text-violet-700 text-center pt-20">The Bear Token</h1>
+                    <div class="w-11/12 mx-auto flex justify-center items-center">
+                        <div class="w-1/2">
+                            <p class="my-4 text-5xl font-bold text-violet-700">Beat the Market</p>
+                        <p class="mb-5 text-justify text-white text-xl w-9/12">The Bear Token ($BEAR) is a Binance Smart Chain rewards token designed to grow your money through the Crypto slump. <br> Our unique treasury wallet will "Buy the Dip" to optimize maximum growth during the bear market.</p>
+                        </div>
+                        <div class="text-center w-1/2">
+                            <img class="w-9/12 mx-auto" src="images/main-logo.png" alt="">
+                        
                         <button class="btn btn-outline btn-primary w-9/12 my-5 mx-auto">Buy Now on pancakeSwap</button>
+                        </div>
         
                     </div>
                 </div>
