@@ -11,9 +11,28 @@
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/22f7957471.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily:{
+            poppins: ["'Poppins', sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body class="hero-overlay bg-opacity-40">
+<body class="hero-overlay bg-opacity-40 font-poppins">
     <section class="main-container">
         <header>
             <div class="w-full h-16 backdrop-blur-xl text-white flex items-center rounded-box fixed top-0">
