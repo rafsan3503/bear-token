@@ -9,12 +9,15 @@
 
 .main-container {
     position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 section.main-container:before {
     position: absolute;
     content: '';
-    width: 100vw;
+    width: 100%;
+    max-width: 1400px;
     height: 100vh;
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
